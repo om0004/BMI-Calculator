@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.9">
 <title>Calculate your BMI</title>
 <style>
+.dog
+{
+	margin-left:20%;
+	border-spacing:10px;
+	font-size:25px;
+}
 #sub
+{ 
+	margin-left:12%;
+}	
+#bm
+{
+	text-align:center;
+	margin-top:5%;
+	margin-left:20%;
+}
+#bm tr 
+{
+background-color: #f2f2f2;
+}
+#he
+{
+	width:10%;
+}
+@media (max-width:1298px){
+    body{background:#41B3A3}
+  #sub
 { 
 	margin-left:30%;
 }	
@@ -14,17 +40,79 @@
 	border-spacing:10px;
 	font-size:25px;
 }
-#bm
+#he
 {
-	text-align:center;
-	margin-top:5%;
-	margin-left:20%;
+	width:20%;
+}
+}
+@media (max-width:1100px){
+    body{background:#41B3A3}
+    #sub
+{ 
+	margin-left:30%;
+}	
+.dog
+{
+	margin-left:8%;
+	border-spacing:10px;
+	font-size:25px;
+}
+#he
+{
+	width:20%;
+}
+}
+@media (max-width:1034px){
+	body{background:#41B3A3}
+    #sub
+{ 
+	margin-left:30%;
+}	
+.dog
+{
+	margin-left:8%;
+	border-spacing:10px;
+	font-size:25px;
+}
+#he
+{
+	width:20%;
+}
+}
+@media (max-width:843px){
+    body{background:#41B3A3}
+   #sub
+{ 
+	margin-left:30%;
+}	
+.dog
+{
+	margin-left:8%;
+	border-spacing:10px;
+	font-size:25px;
+}
+#he
+{
+	width:20%;
+}
+}
+@media (max-width:380px){
+   #sub
+{ 
+	margin-left:30%;
+}
+#he
+{
+	width:20%;
+}	
+.dog
+{
+	margin-left:8%;
+	border-spacing:10px;
+	font-size:25px;
+}
+}
 
-}
-#bm tr 
-{
-background-color: #f2f2f2;
-}
 </style>
 </head>
 <body>
@@ -33,7 +121,7 @@ background-color: #f2f2f2;
 <form>
 <table width="100%" class="dog">
 <tr>
-<td width="25%">	
+<td id="he">	
     <label for="height">Height</label>
 </td>
 <td>
@@ -49,7 +137,7 @@ background-color: #f2f2f2;
 <label for="weight">Weight</label>
 </td>
 <td>
-<input type="number" id="weight" style="border:thin solid #444444">
+<input type="number" id="weight"style="border:thin solid #444444">
 <select>
 <option>kg</option>
 </select>
