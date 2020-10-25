@@ -14,11 +14,11 @@ var weight=document.getElementById("weight").value;
 	if(check=="feet")
 	{
 		var f=parseInt(height);
-		console.log(f);
-		var i=(height-f)*100;
-		console.log(f);
+		if((height-f).toFixed(1)==0.1)
+			var i=(height-f)*100;
+	    else
+	    var i=(height-f)*10;	
 		var m=((f*12)+i)*0.0254;
-		console.log(m);
 		var bmi=weight/(m*m);
 		document.getElementById("result").value=bmi;
 		e=0;
